@@ -5,6 +5,9 @@ import bag1 from './assets/bag_1.png'
 import bag2 from './assets/bag_2.png'
 import bag3 from './assets/bag_3.png'
 import bag4 from './assets/bag_4.png'
+import Tile from "./components/Tile.jsx";
+import brand from './assets/brand.png'
+import our_story from './assets/our_story.png'
 
 
 
@@ -21,25 +24,42 @@ function App() {
                     disabled={true}/>
         </nav>
 
-          <main>
-              <Product label="Best seller"
+        <main>
+            <Product label="Best seller"
                        image={bag1} imageAlt="bag1"
                        nameOfBag="The handy bag"
                        price="400"/>
-              <Product label="Best seller"
+            <Product label="Best seller"
                        image={bag2} imageAlt="bag2"
                        nameOfBag="The stylish bag"
                        price="250"/>
-              <Product label="New collection"
+            <Product label="New collection"
                        image={bag3} imageAlt="bag3"
                        nameOfBag="The simple bag"
                        price="300"/>
-              <Product label="New collection"
+            <Product label="New collection"
                        image={bag4} imageAlt="bag4"
                        nameOfBag="The trendy bag"
                        price="150"/>
-          </main>
+        </main>
+        <footer>
+            <Tile
+                title="The brand">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi, fuga
+                    pariatur praesentium quia sequi similique sunt.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi, fuga
+                    pariatur praesentium quia sequi similique sunt.</p>
+            </Tile>
 
+            <Tile image={brand} imgAlt={"box"}/>
+            <Tile image={our_story} imgAlt={"two persons"}/>
+
+            <Tile
+                title="Our story">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa dolorum enim excepturi, fuga
+                    pariatur praesentium quia sequi similique sunt.</p>
+            </Tile>
+        </footer>
 
       </>
   )
